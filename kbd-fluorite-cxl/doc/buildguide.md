@@ -171,12 +171,21 @@ ProMicro保護用とTRRSジャック保護用のアクリルプレートをキ�
 # V.　ファームウェアのビルドと書き込み
 ### ファームウェアのビルド
 
-fluorite CXL のファームウェアはQMK本家にまだマージされていません
-[https://github.com/ihotsuno/qmk_firmware](https://github.com/ihotsuno/qmk_firmware)
-においてあります
+fluorite CXL のファームウェアはQMK本家マージされました
+
+[https://github.com/qmk/qmk_firmware](https://github.com/qmk/qmk_firmware)
+
 
 MSYS2のシェルからコマンドを入力してビルドを行います
 qmk_firmwareのあるディレクトリに移動して以下のコマンドを入力します
+
+
+QMKのディレクトリに移動
+```
+cd qmk_firmware
+```
+
+fluoriteのビルド
 ```
 make fluorite:default
 ```
